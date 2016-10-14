@@ -10,13 +10,6 @@ import UIKit
 
 class Top20TableViewController: UITableViewController {
     
-
-    
-    
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadJsonData()
@@ -51,7 +44,7 @@ class Top20TableViewController: UITableViewController {
     
     func loadJsonData()
     {
-        let url = URL(string: "http://i335404.iris.fhict.nl/AutoFile.json")
+        let url = URL(string: "https://i335404.iris.fhict.nl/AutoFile.json")
         let dataTask = URLSession.shared.dataTask(with: url!)
         {
             (data, response, error)
@@ -83,10 +76,9 @@ class Top20TableViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let currentRow = indexPath.row
-        let currentAuto = self.autos[currentRow]
-        cell.textLabel?.text = currentAuto.autoNaam
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Top20Cell
+        cell.setAutoData(auto: autos[indexPath.row])
+
         return cell
     }
     
