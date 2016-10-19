@@ -78,7 +78,6 @@ class Top20TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Top20Cell
         cell.setAutoData(auto: autos[indexPath.row])
-
         return cell
     }
     

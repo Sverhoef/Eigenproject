@@ -10,8 +10,6 @@ import UIKit
 
 class Top20Cell: UITableViewCell {
 
-    
-    @IBOutlet weak var autoImageView: UIImageView!
     @IBOutlet weak var autoNaamLabel: UILabel!
     @IBOutlet weak var gebruikerNaamLabel: UILabel!
     @IBOutlet weak var beoordelingLabel: UILabel!
