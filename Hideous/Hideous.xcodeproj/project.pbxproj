@@ -205,6 +205,7 @@
 				TargetAttributes = {
 					554637041DACD2B300D35C7E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5NM782SMV3;
 						ProvisioningStyle = Automatic;
 					};
 					554637181DACD2B400D35C7E = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5NM782SMV3;
 				INFOPLIST_FILE = Hideous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Hideous;
@@ -438,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5NM782SMV3;
 				INFOPLIST_FILE = Hideous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Hideous;
