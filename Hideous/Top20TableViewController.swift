@@ -50,7 +50,7 @@ class Top20TableViewController: UITableViewController {
             (data, response, error)
             in
             if error != nil {
-                print(error)
+                print(error!) // !
             }   else{
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
