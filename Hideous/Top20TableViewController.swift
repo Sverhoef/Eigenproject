@@ -28,19 +28,25 @@ class Top20TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+   /* override func numberOfSections(in tableView: UITableView) -> Int {
+        return andereautos.count;
+
+    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return autos.count
+        //return autos.count
+        return andereautos.count
     }
     
     
     var autos = [Auto]()
     
+    var andereautos = ["Opel Astra","Nissan skyline","Honda Civic","subaru BRZ","De raceauto van Sjon","Knakentuning", "Ford GT 2013", "Tupperware Temper","Lada","Miata"]
+    var anderegebruikers = ["-_-Tuning-_-", "PietJan", "SanderSalamander","VW Marco","JDM4life","Maarten","Hans Teeuwen","De directeur","pjotter","Maria"]
+    var andereboordeling = ["4,5", "5", "2,5","2","2","1,5","1","0,5","0,5","0,5","0,5"]
+    var gezien = ["212", "193", "111","100","94","88","80","55","40","34"]
+    var afbeeldingnamen = [#imageLiteral(resourceName: "image-1"), #imageLiteral(resourceName: "image-2"), #imageLiteral(resourceName: "image-3"),#imageLiteral(resourceName: "brz"), #imageLiteral(resourceName: "racecar"), #imageLiteral(resourceName: "bodykit"),#imageLiteral(resourceName: "gt"), #imageLiteral(resourceName: "tupperware"), #imageLiteral(resourceName: "lada"), #imageLiteral(resourceName: "miata"),]
     
     func loadJsonData()
     {
@@ -74,11 +80,21 @@ class Top20TableViewController: UITableViewController {
         }
         self.tableView.reloadData()
     }
- 
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Top20Cell
-        cell.setAutoData(auto: autos[indexPath.row])
+        //cell.setAutoData(auto: autos[indexPath.row])
+        cell.autoNaamLabel.text = andereautos[indexPath.row]
+        cell.gebruikerNaamLabel.text = anderegebruikers[indexPath.row]
+        cell.beoordelingLabel.text = andereboordeling[indexPath.row]
+        cell.aantalBeoordelingenLabel.text = gezien[indexPath.row]
+        cell.afbeelding.image = afbeeldingnamen[indexPath.row]
+        
+        
+        
         return cell
+ 
     }
     
     /*
