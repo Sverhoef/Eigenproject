@@ -106,6 +106,7 @@ class PopUpViewController: UIViewController {
     
     
     @IBAction func oneShit(_ sender: Any) {
+       // aantallen.setEen(int: 1) aantalbeoording toevoeging -> aantalglobal
         _=geluid(bestand: "Fart1")
         self.removeAnimate()
     }

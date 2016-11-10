@@ -34,8 +34,16 @@ class DetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        
+        // + 1 view
+        //let pluseen = aantallen.getEen()
+        //let aantalbeoordeling = Int((self.selectedAuto?.aantalBeoordeling)!)
+        //let samen = String(pluseen + aantalbeoordeling!)
+        
+        
         self.nameLabel.text = self.selectedAuto?.autoNaam
         self.lifeLabel.text = self.selectedAuto?.gebruikerNaam
+        //self.activeYearsLabel.text = samen // + 1 view
         self.activeYearsLabel.text = self.selectedAuto?.aantalBeoordeling
         self.countryOfBirthLabel.text = self.selectedAuto?.beoordeling
         self.commentsLabel.text = self.selectedAuto?.beschrijving

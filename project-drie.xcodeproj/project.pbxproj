@@ -17,6 +17,7 @@
 		55428D211DD0ABB2004150AA /* HeaderUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55428D201DD0ABB2004150AA /* HeaderUINavigationController.swift */; };
 		55428D231DD0C0D1004150AA /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55428D221DD0C0D1004150AA /* PopUpViewController.swift */; };
 		557CA6FD1DCDE783001C85DF /* top20TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CA6FC1DCDE783001C85DF /* top20TableViewCell.swift */; };
+		557E962F1DD4B12700F4A7E5 /* AantalGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E962E1DD4B12700F4A7E5 /* AantalGlobal.swift */; };
 		55A3E5421D912B2C009EE07F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A3E5411D912B2C009EE07F /* AppDelegate.swift */; };
 		55A3E5441D912B2C009EE07F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A3E5431D912B2C009EE07F /* ViewController.swift */; };
 		55A3E5471D912B2C009EE07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A3E5451D912B2C009EE07F /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		55428D201DD0ABB2004150AA /* HeaderUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderUINavigationController.swift; path = ../HeaderUINavigationController.swift; sourceTree = "<group>"; };
 		55428D221DD0C0D1004150AA /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		557CA6FC1DCDE783001C85DF /* top20TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = top20TableViewCell.swift; sourceTree = "<group>"; };
+		557E962E1DD4B12700F4A7E5 /* AantalGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AantalGlobal.swift; sourceTree = "<group>"; };
 		55A3E53E1D912B2C009EE07F /* project-drie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-drie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A3E5411D912B2C009EE07F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A3E5431D912B2C009EE07F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				55A3E5451D912B2C009EE07F /* Main.storyboard */,
 				55F5644A1DD2285500ED5E19 /* SearchViewController.swift */,
 				55428D221DD0C0D1004150AA /* PopUpViewController.swift */,
+				557E962E1DD4B12700F4A7E5 /* AantalGlobal.swift */,
 				5522E8DD1DD21E91001EF96A /* Supporting Files */,
 				557CA6FC1DCDE783001C85DF /* top20TableViewCell.swift */,
 				55A3E5731D912DEB009EE07F /* Pirate.swift */,
@@ -326,6 +329,7 @@
 				55A3E5721D912D1F009EE07F /* DetailsViewController.swift in Sources */,
 				557CA6FD1DCDE783001C85DF /* top20TableViewCell.swift in Sources */,
 				55428D231DD0C0D1004150AA /* PopUpViewController.swift in Sources */,
+				557E962F1DD4B12700F4A7E5 /* AantalGlobal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
